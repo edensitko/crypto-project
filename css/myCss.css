@@ -1,0 +1,103 @@
+
+body{
+    margin: auto;
+}
+  .card {
+    width: 300px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 50px;
+      overflow: hidden;
+      justify-content: space-evenly;
+
+    }
+    
+.btn-outline-primary{
+    margin-left: 20px;
+    width: 30%;
+    height:40px
+}
+
+ .parallax {   
+      background-image: url("crypto.img");
+      min-height: 300px;    
+     background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;     
+     }
+
+h1 {
+        margin: 20px;
+        color: #000000;
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    
+      }
+ .cryptoMoreInfo {
+        text-align: center;
+        margin-top: auto;
+      }
+ .cardCollapseWrap {
+        margin: 10px;
+        padding: 10px;
+      }
+ #allCards {
+        margin: auto;
+        flex-wrap: wrap;
+        width: 90%;
+        display:flex;
+        gap: 10px;
+
+   }
+   
+ .search-form {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 100px;  
+  }
+
+h6{
+  text-align: center;
+}
+#about{
+  margin: auto;
+}
+.aboutMe{
+  height: 100px;
+}
+.form-check-input{
+height: 30px;
+width: 50px !important;
+position: absolute;
+top: 5px;
+right: 5px;
+}
+.input{
+  width: 200px;
+}
+
+.modal{ 
+display:none;
+height: 500px;
+top: 90px;
+position: fixed; top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+.modal-content{
+width: 45%;
+left: 30%;
+text-align: center;
+border-radius: 10px;
+background-color: rgb(224, 223, 221);
+border: 2px solid rgb(100, 100, 100);
+}
+.addMsg{
+  color: red;
+}

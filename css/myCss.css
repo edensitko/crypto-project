@@ -3,7 +3,7 @@ body{
     margin: auto;
 }
   .card {
-    width: 200px;
+    width: 150px;
   }
   .container {
     display: flex;
@@ -21,8 +21,8 @@ body{
 }
 
  .parallax {   
-      background-image: url("crypto.img");
-      min-height: 300px;    
+     background-image: url("crypto.img");
+     height: 300px;    
      background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -55,10 +55,9 @@ h1 {
    }
    
  .search-form {
+  padding: 10px;
    display: flex;
-   align-items: center;
    justify-content: center;
-   margin-right: 100px;  
   }
 
 h6{

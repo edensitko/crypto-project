@@ -276,48 +276,8 @@ const LoadWindow = async () =>{
       console.log(compareList);
     }
   }
+
   
-  function renderChart() {
-    var chart = new CanvasJS.Chart("chartContainer", {
-      title : {
-        text : "Live Crypto Prices"
-      },
-      data : [{
-        type : "line",
-        dataPoints : []
-      }]
-    });
-  
-    chart.render();
-    function updateChart() {
-      var coins = compareList.map(coin => coin.id); 
-      var currency = "USD"; 
-      var url = "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=" + coins.join(",") + "&tsyms=" + currency;
-    
-      fetch(url)
-        .then(response => response.json())
-        .then(data => {
-          var newDataPoints = [];
-          var coinList = document.getElementById("coinList");
-          coinList.innerHTML = ""; 
-          for (var i = 0; i < coins.length; i++) {
-            var coin = coins[i];
-            var price = data.DISPLAY[coin][currency].PRICE;
-            newDataPoints.push({ x: new Date(), y: price });
-            var listItem = document.createElement("li");
-            listItem.textContent = coin + ": " + price;
-            coinList.appendChild(listItem);
-          }
-          chart.options.data[0].dataPoints = newDataPoints;
-          chart.render();
-        })
-        .catch(error => {
-          console.log("Error fetching data from API:", error);
-        });
-    }
-    
-    setInterval(function() {
-      updateChart();
-    }, 1000);
-  }
+
+
   

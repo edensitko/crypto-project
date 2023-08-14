@@ -3,7 +3,7 @@ body{
     margin: auto;
 }
   .card {
-    width: 300px;
+    width: 200px;
   }
   .container {
     display: flex;
